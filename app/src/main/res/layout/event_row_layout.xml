@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/rl_event_row_layout">
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView
+            android:id="@+id/tv_event_row_layout_event_title"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Title of Event"
+            android:layout_alignParentStart="true"
+            android:layout_margin="15dp"/>
+    <TextView
+            android:id="@+id/tv_event_row_layout_event_date"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Date"
+            android:layout_toRightOf="@+id/tv_event_row_layout_event_title"
+            android:layout_margin="15dp"/>
+    <ImageView
+            android:id="@+id/img_event_row_layout_event_image"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tv_event_row_layout_event_date"
+            android:src="@drawable/ic_alarm_on_black_24dp"
+            android:layout_margin="15dp"/>
+    <Button
+            android:id="@+id/btn_event_row_layout_event_btn"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="More..."
+            android:layout_toRightOf="@+id/img_event_row_layout_event_image"
+            android:layout_margin="15dp"/>
+</RelativeLayout>

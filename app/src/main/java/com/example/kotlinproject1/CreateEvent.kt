@@ -82,7 +82,6 @@ class CreateEvent : AppCompatActivity() {
 
 
         monthPicker.setOnValueChangedListener(NumberPicker.OnValueChangeListener { monthPicker, oldVal, newVal ->
-            Toast.makeText(this,"old val/new val " + oldVal + "/" + newVal, Toast.LENGTH_SHORT).show()
             when(newVal){
                 1, 3, 5, 7, 8, 10, 12 -> dayPicker.maxValue = 31
                 2 -> dayPicker.maxValue = 28
@@ -117,7 +116,7 @@ class CreateEvent : AppCompatActivity() {
                 else
                     notify = false
 //                EventList.events!!.newEvent(eventTitle.text.toString(), eventDescription.text.toString(), date, time, notify)
-                EventList.events.add(Event(eventTitle.text.toString(), eventDescription.text.toString(), date, time, notify))
+//                EventList.events.add(Event(eventTitle.text.toString(), eventDescription.text.toString(), date, time, notify))
                 Log.i(TAG, "finishing")
             }
             if (eventTitle.text.isEmpty()){
